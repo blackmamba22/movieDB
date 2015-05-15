@@ -28,7 +28,7 @@ class Movie(models.Model):
     tv_show = models.BooleanField(default=False, help_text='Is it a TV Show or not?', blank=True)
     raw_name = models.CharField(max_length=128, editable=False, blank=True)
     file_path = models.CharField(max_length=255, editable=False, blank=True)
-    actors = models.ManyToManyField(Actor)
+    actors = models.ManyToManyField(Actor, blank=True, verbose_name='Actor/Actress')
 
     import datetime
     date_entered = models.DateTimeField(default=datetime.date.today())

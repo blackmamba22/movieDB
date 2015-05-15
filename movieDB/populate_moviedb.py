@@ -18,7 +18,7 @@ def populate():
 
             if is_movie_extension(filename):
                 #print "Complete name: ", fullname, \
-                #print "File: ", filename,"\n"
+                print "Adding Film: ", filename
                 add_movie(vidname=filename, filepath=fullname)
 
 def populate_genres():
