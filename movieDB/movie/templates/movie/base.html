@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+     <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}MovieDB{% endblock %}</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-3.3.4-dist/css/bootstrap.min.css' %}">
+
+        <style>
+            body { padding-bottom: 70px;
+                    padding-top: 70px;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+     <!-- Navigation Bar w/ Main Links-->
+
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MovieDB</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--End of navigation bar at the very top of the page-->
+
+     <div class="container">
+     {% block body_block %}
+
+    {% endblock %}
+     </div>
+
+
+
+
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="{% static 'bootstrap-3.3.4-dist/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
