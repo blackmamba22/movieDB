@@ -20,7 +20,7 @@
 
     </head>
 
-    <body>
+    <body background="{% static 'images/movie_background.jpg' %}">
 
      <!-- Navigation Bar w/ Main Links-->
 
@@ -31,7 +31,7 @@
         </div>
         <div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="active"><a href="{% url 'movie:index' %}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
           </ul>
