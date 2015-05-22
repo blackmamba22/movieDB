@@ -1,5 +1,5 @@
 from django.db import models
-
+from datetime import datetime, date
 # Create your models here.
 
 
@@ -38,6 +38,42 @@ class Movie(models.Model):
         return self.title + str(self.release_date)
 
 
+class Language(models.Model):
+    language_name = models.CharField(max_length=128, default='Blank', help_text='Language')
+
+    def __unicode__(self):
+        return self.language_name
+
+
+class Country(models.Model):
+    country_name = models.CharField(max_length=128, default='Blank', help_text='Country Name')
+
+    def __unicode__(self):
+        return self.country_name
+
+
+class Director(models.Model):
+    name = models.CharField(max_length=128, default='Blank', help_text='Director Name')
+
+    def __unicode__(self):
+        return self.name
+
+
+class Film(models.Model):
+    title = models.CharField(max_length=128, default='Blank', help_text='film title')
+    year = models.IntegerField(default=65, help_text='release year', blank=True)
+    type = models.CharField(max_length=20, default='movie', help_text='series, movie')
+    actor = models.ManyToManyField(Actor, blank=True, verbose_name='Actor/Actress')
+    award = models.CharField(max_length=128, default='Blank', null=True,help_text='film awards')
+    country = models.ManyToManyField(Country, default=1,blank=True)
+    director = models.ForeignKey(Director, default=1)
+    genre = models.ForeignKey(MovieGenre, default=1)
+    language = models.ManyToManyField(Language)
+    plot = models.TextField(help_text="Film plot")
+    poster = models.ImageField(null=True)
+    released = models.DateField(default=datetime.today())
+    runtime = models.CharField(max_length=10, default='Blank', help_text='film length')
+    imdb_id = models.IntegerField(default=1)
 
 
 
