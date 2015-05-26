@@ -46,7 +46,7 @@ class Language(models.Model):
 
 
 class Country(models.Model):
-    country_name = models.CharField(max_length=128, default='Blank', help_text='Country Name')
+    country_name = models.CharField(max_length=128, default='Pangea', help_text='Country Name')
 
     def __unicode__(self):
         return self.country_name
@@ -61,19 +61,19 @@ class Director(models.Model):
 
 class Film(models.Model):
     title = models.CharField(max_length=128, default='Blank', help_text='film title')
-    year = models.IntegerField(default=65, help_text='release year', blank=True)
+    year = models.CharField(max_length=15, help_text='release year', blank=True, null=True)
     type = models.CharField(max_length=20, default='movie', help_text='series, movie')
     actor = models.ManyToManyField(Actor, blank=True, verbose_name='Actor/Actress')
     award = models.CharField(max_length=128, default='Blank', null=True,help_text='film awards')
-    country = models.ManyToManyField(Country, default=1,blank=True)
+    country = models.ManyToManyField(Country, default=1, blank=True)
     director = models.ForeignKey(Director, default=1)
     genre = models.ForeignKey(MovieGenre, default=1)
     language = models.ManyToManyField(Language)
-    plot = models.TextField(help_text="Film plot")
-    poster = models.ImageField(null=True)
-    released = models.DateField(default=datetime.today())
-    runtime = models.CharField(max_length=10, default='Blank', help_text='film length')
-    imdb_id = models.IntegerField(default=1)
+    plot = models.TextField(max_length=256, help_text="Film plot", null=True, blank=True)
+    poster = models.CharField(max_length=256, help_text='link to poster image', blank=True, null=True)
+    released = models.CharField(max_length=128, default='Blank', help_text='release date')
+    runtime = models.CharField(max_length=15, default='Blank', help_text='film length')
+    imdb_id = models.CharField(max_length=15, default=1, null=True, blank=True)
 
 
 
