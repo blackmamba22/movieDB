@@ -1,8 +1,7 @@
 import omdb
 
 import unicodedata
-import json
-import re
+import datetime
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
 
@@ -11,27 +10,29 @@ django.setup()
 
 from movie.models import Film, MovieGenre, Actor, Director, Country
 
-movie_list = ['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious']
-
-#print omdb.get(title='True Grit', year=1969, fullplot=True, tomatoes=True)
-#movie = omdb.title('Breaking Bad')
-#scatman = omdb.get(title='Seinfeld')
+movie_list = ['Breaking Bad']#, 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious']
 
 
-def populate_films(films=[]):
+def populate_films(films=['The Transporter']):
 
     for f in films:
         film = omdb.get(title=f)
 
+        for i in film:
+
+            film[i] = film[i].encode("utf-8").strip()
+            print i, ": ", film[i]
+
+
         title = film.get('title')
         year = film.get('year')
-        type = film.get('type')
-        actors = film.get('actor')
+        type_film = film.get('type')
+        actors = film.get('actors')
         awards = film.get('awards')
         country = film.get('country')
         directors = film.get('director')
         genre = film.get('genre')
-        language = film.get('language')
+        language_film = film.get('language')
         plot = film.get('plot')
         poster = film.get('poster')
         released = film.get('released')
@@ -42,7 +43,7 @@ def populate_films(films=[]):
 
         film_model = Film.objects.get_or_create(title=title)[0]
         film_model.year = year
-        film_model.type = type
+        film_model.type = type_film
         film_model.plot = plot
         film_model.poster = poster
         film_model.released = released
@@ -52,25 +53,37 @@ def populate_films(films=[]):
 
         # Strings to list
         if directors != 'N/A':
-            director_name = (unicodedata.normalize('NFKD', directors).encode('ascii', 'ignore'))
-            add_director(director_name)
-            film_model.director = director_name
+            a = actors.strip().split(",")
+
+            if isinstance(a, tuple) or isinstance(a, list):
+                for i in a:
+                    tmp = Actor.objects.get_or_create(full_name=i)[0]
+                    film_model.actor.add(Actor.objects.get(pk=tmp.id))
+            else:
+                tmp = Actor.objects.get_or_create(full_name=actors)[0]
+                film_model.actor.add(Actor.objects.get(pk=tmp.id))
 
         if genre != 'N/A':
-            g = (unicodedata.normalize('NFKD', genre).encode('ascii', 'ignore')).split(",")
-            print g
-            film_model.genre = MovieGenre(g[0])
-            for i in g:
-                add_genre(i)
+            g = genre.strip().split(",")
 
+            if isinstance(g, tuple) or isinstance(g, list):
+                for i in g:
+                    tmp = MovieGenre.objects.get_or_create(name=i)[0]
+                    film_model.genre = MovieGenre.objects.get(pk=tmp.id)
+            else:
+                tmp = MovieGenre.objects.get_or_create(name=genre)[0]
+                film_model.genre = MovieGenre.objects.get(pk=tmp.id)
 
         if country != 'N/A':
-            c = (unicodedata.normalize('NFKD', country).encode('ascii', 'ignore')).split(",")
-            print c
-            #film_model.country.add(c[0])
-            for i in c:
-                add_country(i)
+            c = country.strip().split(",")
 
+            if isinstance(c, tuple) or isinstance(c, list):
+                for i in c:
+                    tmp = Country.objects.get_or_create(country_name=i)[0]
+                    film_model.country.add(Country.objects.get(pk=tmp.id))
+            else:
+                tmp = Country.objects.get_or_create(country_name=country)[0]
+                film_model.country.add(Country.objects.get(pk=tmp.id))
 
         film_model.save()
 
@@ -94,6 +107,8 @@ def add_country(name):
 
 
 if __name__ == '__main__':
-   # populate_films(films=['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious'])
-    s = omdb.get(title='True Grit', year=1969, fullplot=True, tomatoes=True)
-    print json.dump(s.get('title'), separators=('', ':'), ensure_ascii=True)
+    populate_films(films=['Fast'])
+    #s = omdb.get(title='True Grit', year=1969, fullplot=True, tomatoes=True)
+
+
+
