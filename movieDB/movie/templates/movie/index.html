@@ -30,7 +30,7 @@
         </div><!-- /.row -->
 
           {% if movies %}
-          <div class="row">
+          <!--<div class="row">
               <div class="col-sm-5 col-lg-4">
                 <h3><span class="label label-primary">Title</span></h3>
               </div>
@@ -46,29 +46,26 @@
               <div class="col-sm-2 col-lg-2">
                <h3><span class="label label-primary">TV Show or Movie</span></h3>
               </div>
-          </div>
+          </div>-->
           {% for movie in movies %}
           <div class="row">
 
-              <div class="col-sm-5 col-lg-4">
-                <a href="#">{{ movie.title }}</a>
-              </div>
-              <div class="col-sm-2 col-lg-3">
-               <span class="label label-danger">{{ movie.genre }}</span>
-              </div>
-              <div class="col-sm-1 col-lg-1">
-                {{ movie.length }} mins
-              </div>
-              <div class="col-sm-2 col-lg-2">
-                {{ movie.release_date }}
-              </div>
-              <div class="col-sm-2 col-lg-2">
-               {% if movie.tv_show %}
-                  TV Show
-               {% else %}
-                  Movie
-              {% endif %}
-              </div>
+              <table cellspacing="20" class="table table-striped">
+                <tr><div class="col-lg-3">
+                    <td>
+                        <img src="{{ movie.poster }}" width="250" length="450">
+                    </td></div>
+
+                    <div class="col-lg-5"><td>
+                        <h3 style="display:inline;">{{ movie.title }}</h3> <h4 style="display:inline;">({{ movie.released }})</h4>
+                        <p>{{ movie.type }} | {{ movie.rated }} | {{ movie.runtime }} | {{ movie.genre }}</p>
+                        <p style="border-style:dotted;border-color:black;border-width:1px"></p>
+                        <p>{{ movie.plot }}</p>
+                    </td></div>
+
+                </tr>
+            </table>
+
 
 
           </div>
