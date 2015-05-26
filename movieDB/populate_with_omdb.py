@@ -1,7 +1,5 @@
 import omdb
 
-import unicodedata
-import datetime
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
 
@@ -10,7 +8,7 @@ django.setup()
 
 from movie.models import Film, MovieGenre, Actor, Director, Country
 
-movie_list = ['Breaking Bad']#, 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious']
+movie_list = ['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious']
 
 
 def populate_films(films=['The Transporter']):
@@ -50,6 +48,7 @@ def populate_films(films=['The Transporter']):
         film_model.runtime = runtime
         film_model.imdb_id = imdb_id
         film_model.award = awards
+        film_model.rated = film.get("rated")
 
         # Strings to list
         if directors != 'N/A':
@@ -107,7 +106,7 @@ def add_country(name):
 
 
 if __name__ == '__main__':
-    populate_films(films=['Fast'])
+    populate_films(films=['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious'])
     #s = omdb.get(title='True Grit', year=1969, fullplot=True, tomatoes=True)
 
 
