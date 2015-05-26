@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import Movie
+from models import Movie, Film
 from forms import MovieSearchForm
 
 # Create your views here.
@@ -22,12 +22,12 @@ def index(request):
     if 'moviequery' in request.GET and request.GET['moviequery']:
         moviequery = request.GET['moviequery']
 
-        movies = Movie.objects.filter(title__icontains=moviequery)
-        context_dict = {'movies' : movies}
+        movies = Film.objects.filter(title__icontains=moviequery)
+        context_dict = {'movies': movies}
 
         return render(request, 'movie/index.html', context_dict)
     else:
-        print request.POST
+        #print request.POST
         return render(request, 'movie/index.html', {})
 
 
