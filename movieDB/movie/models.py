@@ -75,6 +75,7 @@ class Film(models.Model):
     runtime = models.CharField(max_length=15, default='Blank', help_text='film length')
     imdb_id = models.CharField(max_length=15, default=1, null=True, blank=True)
     rated = models.CharField(max_length=15, default=1, null=True, blank=True)
+    meta_score = models.CharField(max_length=10, null=True,blank=True)
 
 
 

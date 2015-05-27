@@ -1,9 +1,9 @@
-import re
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
 
 import django
 django.setup()
+
 
 from movie.models import Movie, MovieGenre
 

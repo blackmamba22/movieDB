@@ -1,10 +1,10 @@
 import omdb
-
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
 
 import django
 django.setup()
+
 
 from movie.models import Film, MovieGenre, Actor, Director, Country
 
@@ -106,7 +106,10 @@ def add_country(name):
 
 
 if __name__ == '__main__':
-    populate_films(films=['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious'])
+    #add_director('John Singleton')
+    #add_country('USA')
+    #add_genre('Comedy')
+    populate_films(films=['Breaking Bad', 'Seinfeld', 'The Naked Gun', 'Swordfish', '2 Fast 2 Furious', 'Fast', 'Step Brothers'])
     #s = omdb.get(title='True Grit', year=1969, fullplot=True, tomatoes=True)
 
 
