@@ -11,7 +11,6 @@ class Language(models.Model):
 
 class Country(models.Model):
     country_name = models.CharField(max_length=128, default='Pangea', help_text='Country Name')
-    language = models.ManyToManyField(Language, blank=True)
 
     def __unicode__(self):
         return self.country_name
@@ -57,6 +56,7 @@ class Film(models.Model):
     director = models.ManyToManyField(Director, default=1, blank=True)
     type = models.CharField(max_length=20, default='movie', help_text='series, movie etc')
     actor = models.ManyToManyField(Actor, blank=True, verbose_name='Actor/Actress')
+    writer = models.ManyToManyField(Writer, blank=True, verbose_name='Writer')
     award = models.CharField(max_length=128, default='Blank', null=True,help_text='film awards')
     country = models.ManyToManyField(Country, default=1, blank=True)
     language = models.ManyToManyField(Language)
@@ -65,6 +65,7 @@ class Film(models.Model):
     imdb_id = models.CharField(max_length=15, default=1, null=True, blank=True)
     imdb_rating = models.CharField(max_length=15, null=True, blank=True)
     meta_score = models.CharField(max_length=10, null=True,blank=True)
+    file_path = models.CharField(max_length=255, null=True, blank=True, default='N/A')
 
     def __unicode__(self):
         return self.title + self.year
