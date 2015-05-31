@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Movie, MovieGenre, Actor
+from models import Movie, MovieGenre, Actor, Film, Director, Country, Language
 
 # Register your models here.
 
@@ -19,6 +19,13 @@ class ActorAdmin(admin.ModelAdmin):
     search_fields = ('first_name', 'last_name')
 
 
+class FilmAdmin(admin.ModelAdmin):
+    list_display = ('title', 'released', 'type', 'genre','director', 'poster')
+    search_fields = ('title',)
+    list_filter = ('year',)
+    ordering = ('title',)
+
+admin.site.register(Film, FilmAdmin)
 admin.site.register(MovieGenre, MovieGenreAdmin)
 admin.site.register(Movie, MovieAdmin)
 admin.site.register(Actor, ActorAdmin)
