@@ -7,5 +7,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'movieDB.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^movie/', include('movie.urls', namespace="movie")),
+    url(r'^filmdb/', include('filmdb.urls', namespace="filmdb")),
+    url(r'^film/', include('filmdb.urls', namespace="film")),
 )

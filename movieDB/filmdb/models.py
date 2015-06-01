@@ -54,7 +54,7 @@ class Film(models.Model):
     runtime = models.CharField(max_length=15, default='Blank', help_text='film length')
     genre = models.ManyToManyField(Genre, default=1, blank=True)
     director = models.ManyToManyField(Director, default=1, blank=True)
-    type = models.CharField(max_length=20, default='movie', help_text='series, movie etc')
+    type = models.CharField(max_length=20, default='filmdb', help_text='series, movie etc')
     actor = models.ManyToManyField(Actor, blank=True, verbose_name='Actor/Actress')
     writer = models.ManyToManyField(Writer, blank=True, verbose_name='Writer')
     award = models.CharField(max_length=128, default='Blank', null=True,help_text='film awards')

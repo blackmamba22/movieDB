@@ -8,7 +8,7 @@ import datetime
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('movie', '0009_auto_20150527_1056'),
+
     ]
 
     operations = [
@@ -38,7 +38,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('title', models.CharField(default=b'Blank', help_text=b'film title', max_length=128)),
                 ('year', models.CharField(help_text=b'release year', max_length=15, null=True, blank=True)),
-                ('type', models.CharField(default=b'movie', help_text=b'series, movie', max_length=20)),
+                ('type', models.CharField(default=b'filmdb', help_text=b'series, filmdb', max_length=20)),
                 ('award', models.CharField(default=b'Blank', max_length=128, null=True, help_text=b'film awards')),
                 ('plot', models.TextField(help_text=b'Film plot', max_length=256, null=True, blank=True)),
                 ('poster', models.CharField(help_text=b'link to poster image', max_length=256, null=True, blank=True)),
@@ -47,10 +47,10 @@ class Migration(migrations.Migration):
                 ('imdb_id', models.CharField(default=1, max_length=15, null=True, blank=True)),
                 ('rated', models.CharField(default=1, max_length=15, null=True, blank=True)),
                 ('meta_score', models.CharField(max_length=10, null=True, blank=True)),
-                ('actor', models.ManyToManyField(to='movie.Actor', verbose_name=b'Actor/Actress', blank=True)),
-                ('country', models.ManyToManyField(default=1, to='movie.Country', blank=True)),
-                ('director', models.ForeignKey(default=1, to='movie.Director')),
-                ('genre', models.ForeignKey(default=1, to='movie.MovieGenre')),
+                ('actor', models.ManyToManyField(to='filmdb.Actor', verbose_name=b'Actor/Actress', blank=True)),
+                ('country', models.ManyToManyField(default=1, to='filmdb.Country', blank=True)),
+                ('director', models.ForeignKey(default=1, to='filmdb.Director')),
+                ('genre', models.ForeignKey(default=1, to='filmdb.MovieGenre')),
             ],
             options={
             },
@@ -69,11 +69,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='film',
             name='language',
-            field=models.ManyToManyField(to='movie.Language'),
+            field=models.ManyToManyField(to='filmdb.Language'),
             preserve_default=True,
         ),
         migrations.AlterField(
-            model_name='movie',
+            model_name='filmdb',
             name='release_date',
             field=models.DateField(default=datetime.datetime(2015, 5, 27, 10, 57, 41, 365691)),
         ),
