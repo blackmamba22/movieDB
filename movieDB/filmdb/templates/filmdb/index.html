@@ -39,9 +39,9 @@
                             <img src="{{ movie.poster }}" width="250" length="450">
                         </td></div>
 
-                        <div class="col-lg-5"><td>
-                            <h3 style="display:inline;">{{ movie.title }}</h3> <h4 style="display:inline;">({{ movie.released }})</h4>
-                            <p>{{ movie.type }} | {{ movie.rated }} | {{ movie.runtime }}</p>
+                        <div class="col-lg-9"><td>
+                            <h3 style="display:inline;"><a href="{% url 'filmdb:film_page' movie.slug %}">{{ movie.title }}</a></h3> <h4 style="display:inline;">({{ movie.released }})</h4>
+                            <p>{{ movie.type }} | {{ movie.rated }} | {{ movie.runtime }} {{ movie.slug }}</p>
                             <p style="border-style:dotted;border-color:black;border-width:1px"></p>
                             <p>{{ movie.plot }}</p>
                         </td></div>
