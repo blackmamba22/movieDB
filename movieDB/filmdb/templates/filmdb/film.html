@@ -1,10 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends 'filmdb/base.html' %}
 
-</body>
-</html>
+{% load staticfiles %}
+
+{% block title %}{{ film.title }}{% endblock %}
+{% block body_block %}
+
+<div class="container">
+      <div class="jumbotron">
+
+          <div class="row">
+
+              {% if film %}
+
+                  <div class="col-lg-4">
+                      <img src="{{ film.poster }}" width="250" length="450">
+                  </div>
+
+                  <div class="col-lg-8">
+                      <h3 style="display:inline;">{{ film.title }}</h3> <h4 style="display:inline;">({{ film.released }})</h4>
+                     <p>{{ film.type }} | {{ film.rated }} | {{ film.runtime }} | {{ film.imdb_rating }}</p>
+                      <p style="border-style:dotted;border-color:black;border-width:1px"></p>
+                      <p> {{ film.plot }} </p>
+                  </div>
+              {% else %}
+                <strong>No film exists for this title.</strong>
+              {% endif %}
+
+          </div>
+      </div>
+</div>
+
+
+
+{% endblock %}

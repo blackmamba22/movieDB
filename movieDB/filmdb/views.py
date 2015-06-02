@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-
 from models import Film
 # Create your views here.
 
@@ -26,17 +25,13 @@ def index(request):
         return render(request, 'filmdb/index.html', {})
 
 
-"""
+def film_page(request, film_slug):
+    context_dict = {}
 
-def index3(request):
+    try:
+        film = Film.objects.get(slug=film_slug)
+        context_dict['film'] = film
+    except Film.DoesNotExist:
+        pass
 
-    if 'moviequery' in request.GET and request.GET['moviequery']:
-        moviequery = request.GET['moviequery']
-
-        movies = Film.objects.filter(title__icontains=moviequery)
-        context_dict = {'movies': movies}
-
-        return render(request, 'movie/index.html', context_dict)
-    else:
-        #print request.POST
-        return render(request, 'movie/index.html', {})"""
+    return render(request, 'filmdb/film.html', context_dict)
