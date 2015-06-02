@@ -16,6 +16,7 @@ class FilmAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     list_filter = ('year',)
     ordering = ('title',)
+    prepopulated_fields = {'slug': ('title',)}
 
 admin.site.register(Film, FilmAdmin)
 admin.site.register(Genre, GenreAdmin)

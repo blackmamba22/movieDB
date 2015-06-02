@@ -1,4 +1,5 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
 # Create your models here.
 
@@ -66,6 +67,11 @@ class Film(models.Model):
     imdb_rating = models.CharField(max_length=15, null=True, blank=True)
     meta_score = models.CharField(max_length=10, null=True,blank=True)
     file_path = models.CharField(max_length=255, null=True, blank=True, default='N/A')
+    slug = models.SlugField(unique=True)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Film, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return self.title + self.year
