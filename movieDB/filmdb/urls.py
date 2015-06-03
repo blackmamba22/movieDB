@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', views.index, name="index"),
     url(r'^film/(?P<film_slug>[\w\-]+)/$', views.film_page, name="film_page"),
+    url(r'^browse/$', views.browse_page, name="browse_page"),
 
 )
