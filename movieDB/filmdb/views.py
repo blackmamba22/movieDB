@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+import string
+
 from models import Film
 # Create your views here.
 
@@ -35,3 +37,30 @@ def film_page(request, film_slug):
         pass
 
     return render(request, 'filmdb/film.html', context_dict)
+
+
+def browse_page(request):
+
+    # List of alphabets from A - Z
+    alphabets = [letter for letter in string.ascii_uppercase]
+    context_dict = {}#{let: None for let in alphabets}
+
+
+    try:
+        for letter in alphabets:
+            films = Film.objects.filter(title__startswith=letter)
+            context_dict[letter] = films
+
+
+        context_dict['filled'] = 'filled'
+
+    except Film.DoesNotExist:
+        pass
+
+    context_dict['alpha'] = alphabets
+
+    return render(request, 'filmdb/browse.html', context_dict)
+
+
+
+
