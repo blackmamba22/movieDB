@@ -45,14 +45,16 @@ def browse_page(request):
     alphabets = [letter for letter in string.ascii_uppercase]
     context_dict = {}#{let: None for let in alphabets}
 
+    f = []
 
     try:
         for letter in alphabets:
             films = Film.objects.filter(title__startswith=letter)
-            context_dict[letter] = films
-
+            #context_dict[letter] = films
+            f.append({letter:films})
 
         context_dict['filled'] = 'filled'
+        context_dict['films'] = f
 
     except Film.DoesNotExist:
         pass
