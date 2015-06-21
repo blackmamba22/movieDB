@@ -1,5 +1,6 @@
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
+import re
 
 import django
 django.setup()
@@ -14,21 +15,14 @@ def populate():
     for root, dirs, files in os.walk(movie_source):
 
         for filename in files:
-            fullname = os.path.join(root, filename)
+            path = os.path.join(root, filename)
+            film_title = os.path.basename(filename)
 
             if is_movie_extension(filename):
                 #print "Complete name: ", fullname, \
                 print "Adding Film: ", filename
-                add_movie(vidname=filename, filepath=fullname)
+                add_movie(vidname=filename, filepath=path)
 
-def populate_genres():
-
-    genres = ['Action Films', 'Adventure Films', 'Comedy Films', 'Crime & Gangster Films', 'Drama Films', 'Epics/Historical Films',
-              'Horror Films', 'Musicals (Dance) Films', 'Science Fiction Films', 'War (Anti-War) Films', 'Westerns']
-
-    for g in genres:
-        print "Adding film genre: ", g
-        add_movie_genre(g)
 
 def is_movie_extension(filename, movie_extensions=['avi', 'dat', 'mp4', 'mkv', 'mov', 'mpg', 'rmvb','vob']):
 
@@ -43,25 +37,23 @@ def is_movie_extension(filename, movie_extensions=['avi', 'dat', 'mp4', 'mkv', '
     return False
 
 
-def add_movie(vidname, filepath):
-    movie = Movie.objects.get_or_create(raw_name=vidname)[0]
-    movie.file_path = filepath
-    movie.title = vidname
-    movie.save()
+def add_from_folder(folder_name):
 
-    return movie
+    for root, dirs, files in os.walk(folder_name):
 
+        for filename in files:
+            path = os.path.join(root, filename)
+            film_title = os.path.basename(filename)
 
-def add_movie_genre(genre):
-    mg = MovieGenre.objects.get_or_create(name=genre)[0]
-    mg.save()
+            if is_movie_extension(filename):
+                #print "Complete name: ", fullname, \
 
-    return mg
+                add_film(vidname=filename, filepath=path)
 
 
 
 if __name__ == '__main__':
-    populate_genres()
+
     populate()
 
 

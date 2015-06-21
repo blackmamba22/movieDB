@@ -98,8 +98,11 @@ STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
+STATICFILES_FINDERS = ("django.contrib.staticfiles.finders.FileSystemFinder",
+                        "django.contrib.staticfiles.finders.AppDirectoriesFinder")
+
 STATICFILES_DIRS = (
-    STATIC_PATH,
+    STATIC_PATH,'/home/gawaine/Desktop/Shared/',
 )
 
 # Media

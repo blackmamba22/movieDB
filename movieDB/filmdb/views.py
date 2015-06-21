@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 import string
+import os
+import subprocess
+
 
 from models import Film
 # Create your views here.
@@ -33,6 +36,9 @@ def film_page(request, film_slug):
     try:
         film = Film.objects.get(slug=film_slug)
         context_dict['film'] = film
+
+        if film.file_path == 'n/a':
+            context_dict['error'] = 'Video file cannot be found'
     except Film.DoesNotExist:
         pass
 
@@ -62,6 +68,23 @@ def browse_page(request):
     context_dict['alpha'] = alphabets
 
     return render(request, 'filmdb/browse.html', context_dict)
+
+
+def play_film(request, film_slug):
+
+    context_dict = {}
+
+
+    film = Film.objects.get(slug=film_slug)
+
+    if film and film.file_path != 'n/a':
+        cmds = ["vlc", film.file_path]
+        subprocess.call(cmds)       # open vlc play with the file_path
+        context_dict['film'] = film
+
+
+    return render(request, 'filmdb/film.html', context_dict)
+
 
 
 

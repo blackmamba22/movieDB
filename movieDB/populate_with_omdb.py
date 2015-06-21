@@ -1,4 +1,5 @@
 import omdb
+import re
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'movieDB.settings')
 
@@ -19,7 +20,7 @@ def add_film(film_list=[]):
 
         # Check if film was actually received, if not skip to next film
         if film_json_obj.get('response') is None:
-            print "FAILED. Was not able to retrieve film for via omdb api. Please check the title."
+            print  "FAILED. Was not able to retrieve film for via omdb api. Please check the title."
             continue
 
         # Convert all attributes for a film to unicode.
@@ -68,8 +69,33 @@ def add_film(film_list=[]):
         print "Adding film....", filmmodel.title, filmmodel.year
 
 
+def is_movie_extension(filename, movie_extensions=['avi', 'dat', 'mp4', 'mkv', 'mov', 'mpg', 'rmvb','vob']):
+
+    for ext in movie_extensions:
+
+        pattern =  r"(.*)\." + ext + r"$"
+        extension_object = re.search(pattern, filename, re.I)
+
+        if extension_object:
+            return True
+
+    return False
 
 
+def add_from_folder(folder_name):
+
+    films_found = []
+
+    for root, dirs, files in os.walk(folder_name):
+
+        for filename in files:
+            path = os.path.join(root, filename)
+            film_title = os.path.splitext(filename)[0]
+
+            if is_movie_extension(filename):
+                films_found.append((film_title, path))
+
+    add_film(films_found)
 
 
 if __name__ == '__main__':
@@ -78,8 +104,10 @@ if __name__ == '__main__':
     #s = omdb.get(title='Spy Hard', fullplot=True, tomatoes=True)
     #print s
 
-    films = [('Spy Hard', 'n/a'), ('The Naked Gun', 'n/a'), ('Seinfeld', 'n/a')]
-    add_film(films)
+    #films = [('Spy Hard', 'n/a'), ('The Naked Gun', 'n/a'), ('Seinfeld', 'n/a')]
+    films = [('Casablanca', 'n/a'), ('Interstellar', 'n/a')]
+    #add_film(films)
+    add_from_folder('/home/gawaine/Desktop/Shared/Movies')
 
 
 

@@ -19,7 +19,13 @@
 
                   <div class="col-lg-8">
                       <h3 style="display:inline;">{{ film.title }}</h3> <h4 style="display:inline;">({{ film.released }})</h4>
-                     <p>{{ film.type }} | {{ film.rated }} | {{ film.runtime }} | {{ film.imdb_rating }}</p>
+                     <p>{{ film.type }} | {{ film.rated }} | {{ film.runtime }} | {{ film.imdb_rating }}
+                         {% if error %}
+                            <span style="color:red;">{{ error }}</span>
+                         {% else %}
+                         <a href="{% url 'filmdb:watch_page' film.slug %}"><i class="fa fa-play-circle fa-2x"></i></a>
+                         {% endif %}
+                     </p>
                       <p style="border-style:dotted;border-color:black;border-width:1px"></p>
                       <p> {{ film.plot }} </p>
                   </div>

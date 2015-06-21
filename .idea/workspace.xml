@@ -2,19 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dae9831-e9cb-4f6e-bf2a-84a590d2bb72" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0005_auto_20150526_1743.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0006_auto_20150527_1033.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0007_auto_20150527_1055.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0008_auto_20150527_1055.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0009_auto_20150527_1056.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0011_auto_20150527_1057.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0012_auto_20150527_1058.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/models.py" afterPath="$PROJECT_DIR$/movieDB/movie/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0002_film_file_path.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0003_remove_country_language.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0004_film_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0005_auto_20150601_2049.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0006_auto_20150601_2053.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0007_auto_20150601_2056.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0008_auto_20150601_2058.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0009_auto_20150601_2100.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0010_auto_20150601_2104.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0011_remove_film_slug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0012_film_slug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0013_auto_20150601_2120.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/migrations/0014_auto_20150602_1725.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/omdb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/os" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/re" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/watch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0002_auto_20150509_1655.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0002_auto_20150509_1655.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0003_auto_20150512_1955.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0003_auto_20150512_1955.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0004_auto_20150512_1956.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0004_auto_20150512_1956.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0005_auto_20150526_1743.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0005_auto_20150526_1743.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0006_auto_20150527_1033.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0006_auto_20150527_1033.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0007_auto_20150527_1055.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0007_auto_20150527_1055.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0008_auto_20150527_1055.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0008_auto_20150527_1055.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0009_auto_20150527_1056.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0009_auto_20150527_1056.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057temp.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057temp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0011_auto_20150527_1057.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0011_auto_20150527_1057.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movie/migrations/0012_auto_20150527_1058.py" afterPath="$PROJECT_DIR$/movieDB/movie/migrations/0012_auto_20150527_1058.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/base.html" afterPath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/browse.html" afterPath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/browse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/film.html" afterPath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/film.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/index.html" afterPath="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/models.py" afterPath="$PROJECT_DIR$/movieDB/filmdb/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/populate_moviedb.py" afterPath="$PROJECT_DIR$/movieDB/populate_moviedb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/populate_with_omdb.py" afterPath="$PROJECT_DIR$/movieDB/populate_with_omdb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/movieDB/settings.py" afterPath="$PROJECT_DIR$/movieDB/movieDB/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/urls.py" afterPath="$PROJECT_DIR$/movieDB/filmdb/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/movieDB/filmdb/views.py" afterPath="$PROJECT_DIR$/movieDB/filmdb/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="movie_search_webapp.iws" />
@@ -39,23 +66,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movieDB/movie/models.py">
+      <file leaf-file-name="populate_with_omdb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/populate_with_omdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1290">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1635">
+              <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#2883#3088#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movieDB/filmdb/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.10509209" vertical-offset="262" max-vertical-offset="1455">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/filmdb/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populate_with_omdb.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movieDB/populate_with_omdb.py">
+      <file leaf-file-name="film.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/film.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60996747" vertical-offset="862" max-vertical-offset="1830">
-              <caret line="95" column="53" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="705">
+              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,15 +124,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/movieDB/movieDB/urls.py" />
         <option value="$PROJECT_DIR$/movieDB/movie/urls.py" />
-        <option value="$PROJECT_DIR$/movieDB/movieDB/settings.py" />
         <option value="$PROJECT_DIR$/movieDB/movie/views.py" />
-        <option value="$PROJECT_DIR$/movieDB/movie/admin.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/movieDB/populate_moviedb.py" />
         <option value="$PROJECT_DIR$/movieDB/movie/models.py" />
+        <option value="$PROJECT_DIR$/movieDB/movie/admin.py" />
+        <option value="$PROJECT_DIR$/movieDB/movieDB/urls.py" />
+        <option value="$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057.py" />
+        <option value="$PROJECT_DIR$/movieDB/movie/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057temp.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/admin.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/models.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templatetags.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templatetags/filmdb_extras.py" />
+        <option value="$PROJECT_DIR$/movieDB/populate_moviedb.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/browse.html" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/base.html" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/index.html" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/urls.py" />
         <option value="$PROJECT_DIR$/movieDB/populate_with_omdb.py" />
+        <option value="$PROJECT_DIR$/movieDB/movieDB/settings.py" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/watch.html" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/film.html" />
+        <option value="$PROJECT_DIR$/movieDB/filmdb/views.py" />
       </list>
     </option>
   </component>
@@ -109,6 +178,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,7 +233,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="movie" />
+              <option name="myItemId" value="movieDB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -181,17 +251,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="movie" />
+              <option name="myItemId" value="filmdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movie_search_webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movie_search_webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="movieDB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filmdb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filmdb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,11 +290,20 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movieDB/filmdb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movieDB/filmdb/templatetags" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -356,7 +456,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431479632493</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add omdb import for desktop at home.">
+      <created>1432747578755</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1432747578755</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -368,7 +474,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11927083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -376,7 +482,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -403,20 +509,74 @@
     <MESSAGE value="updated url for movie application and created a basic index view." />
     <MESSAGE value="created population for the movie_movie table. not all fields are filled." />
     <MESSAGE value="updated movie models to have null fields to accomodate population script." />
-    <option name="LAST_COMMIT_MESSAGE" value="updated movie models to have null fields to accomodate population script." />
+    <MESSAGE value="add omdb import for desktop at home." />
+    <option name="LAST_COMMIT_MESSAGE" value="add omdb import for desktop at home." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/movieDB/populate_with_omdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1635">
+          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#2883#3088#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/watch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="345">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#strong#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1755">
+          <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1290">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/populate_with_omdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#2883#3088#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="540">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/movie/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1275">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -432,9 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -442,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1080">
           <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -450,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1275">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -458,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,9 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -476,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1080">
           <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
           <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -492,9 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -502,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="870">
           <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,10 +664,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/urls.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.8997773" vertical-offset="77" max-vertical-offset="975">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0004_auto_20150512_1956.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0003_auto_20150512_1955.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0002_auto_20150509_1655.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -535,84 +699,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45503792" vertical-offset="0" max-vertical-offset="1545">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movie/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1787649" vertical-offset="0" max-vertical-offset="923">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13001083" vertical-offset="0" max-vertical-offset="923">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/movie/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.11375948" vertical-offset="0" max-vertical-offset="923">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/templates/movie/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8997773" vertical-offset="77" max-vertical-offset="975">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/populate_moviedb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0004_auto_20150512_1956.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/templates/movie/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0003_auto_20150512_1955.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0002_auto_20150509_1655.py">
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+        <state vertical-scroll-proportion="-0.040086675" vertical-offset="37" max-vertical-offset="1815">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/movie/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1290">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/migrations/0010_auto_20150527_1057temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86998916" vertical-offset="262" max-vertical-offset="1185">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movie/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26002166" vertical-offset="0" max-vertical-offset="923">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32502708" vertical-offset="0" max-vertical-offset="923">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="34" column="90" selection-start-line="34" selection-start-column="90" selection-end-line="34" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templatetags/filmdb_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08125677" vertical-offset="0" max-vertical-offset="923">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/populate_moviedb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3336945" vertical-offset="52" max-vertical-offset="975">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40519187" vertical-offset="76" max-vertical-offset="975">
+          <caret line="29" column="75" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/browse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49209931" vertical-offset="359" max-vertical-offset="1290">
+          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6783296" vertical-offset="44" max-vertical-offset="1065">
+          <caret line="43" column="106" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/movieDB/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1755">
+          <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/watch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23359288" vertical-offset="0" max-vertical-offset="899">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#strong#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movieDB/populate_with_omdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60996747" vertical-offset="862" max-vertical-offset="1830">
-          <caret line="95" column="53" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1635">
+          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#2883#3088#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/templates/filmdb/film.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="705">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieDB/filmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.10509209" vertical-offset="262" max-vertical-offset="1455">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
